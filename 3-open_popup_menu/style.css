@@ -1,0 +1,55 @@
+#popup {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    overflow-y: auto;
+}
+
+#popup > .content {
+    padding: 8px;
+
+    display: flex;
+    grid-gap: 6px;
+    flex-direction: column;
+
+    border-radius: 8px;
+    background-color: #fff;
+
+    z-index: 1000;
+}
+
+#popup > .background {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0,0,0,0.56);
+
+    z-index: 900;
+}
+
+#popup > .background:after {
+    position: absolute;
+
+    top: 32px;
+    right: 32px;
+
+    content: 'X';
+    color: #ffffff;
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 950;
+}
