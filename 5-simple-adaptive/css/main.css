@@ -1,0 +1,51 @@
+/* 
+ * Задаем базовые стили для элементов body
+ * (нас интересуют в первую очередь шрифты)
+ */
+body {
+    margin: 0;
+    font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 
+ * Простой класс, выравнивающий контент по центру
+ * (аналогичный bootstrap-классу)
+ */
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1024px;
+}
+
+/* 
+ * Простой класс, делящий контент на "строки"
+ * (аналогичный bootstrap-классу)
+ */
+.row {
+    display: flex;
+    align-items: flex-start;
+
+    /* Отступ между колонками будет 16px */
+    grid-gap: 16px;
+
+}
+
+/* 
+ * Простой класс, делящий контент строки на "колонки" (их предполагается, до 4-х в одной строчке)
+ * (аналогичный bootstrap-классу)
+ */
+.row .col {
+    width: 100%;
+    min-width: 20%;
+}
+
+/* 
+ * Вспомогательный класс для реализации "карточек"
+ * (аналогичный bootstrap-классу)
+ */
+.card {
+    padding: 32px;
+    background-color: #eee;
+
+    box-sizing: border-box;
+}
